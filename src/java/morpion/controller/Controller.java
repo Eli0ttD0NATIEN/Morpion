@@ -20,6 +20,17 @@ public class Controller implements IModel, IView {
 		
 	}
 	
+	public char getButton() {
+		return button;
+	}
+
+
+	public void setButton(char button) {
+		this.button = button;
+	}
+
+
+
 	public void mouseClickIntoXY(char button) {
 		switch(button) {
 		case 'A':
