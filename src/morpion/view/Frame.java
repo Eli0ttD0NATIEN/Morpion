@@ -199,24 +199,70 @@ public class Frame extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		if(arg0.getSource() == button00)
-			setButton('A');
-		if(arg0.getSource() == button01)
-			setButton('B');
-		if(arg0.getSource() == button02)
-			setButton('C');
-		if(arg0.getSource() == button10)
-			setButton('D');
-		if(arg0.getSource() == button11)
-			setButton('E');
-		if(arg0.getSource() == button12)
-			setButton('F');
-		if(arg0.getSource() == button20)
-			setButton('G');
-		if(arg0.getSource() == button21)
-			setButton('H');
-		if(arg0.getSource() == button22)
-			setButton('I');
+		if(arg0.getSource() == button00) {
+			controller.setButton('A');
+			if(model.currentPlayer == "cross") {
+				button00.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button00.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button01) {
+			controller.setButton('B');
+			if(model.currentPlayer == "cross") {
+				button01.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button01.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button02) {
+			controller.setButton('C');
+			if(model.currentPlayer == "cross") {
+				button02.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button02.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button10) {
+			controller.setButton('D');
+			if(model.currentPlayer == "cross") {
+				button10.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button10.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button11) {
+			controller.setButton('E');
+			if(model.currentPlayer == "cross") {
+				button11.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button11.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button12) {
+			controller.setButton('F');
+			if(model.currentPlayer == "cross") {
+				button12.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button12.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button20) {
+			controller.setButton('G');
+			if(model.currentPlayer == "cross") {
+				button20.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button20.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button21) {
+			controller.setButton('H');
+			if(model.currentPlayer == "cross") {
+				button21.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button21.setIcon(new ImageIcon(roundSprite));
+			}
+		}else if(arg0.getSource() == button22) {
+			controller.setButton('I');
+			if(model.currentPlayer == "cross") {
+				button22.setIcon(new ImageIcon(crossSprite));
+			}else {
+				button22.setIcon(new ImageIcon(roundSprite));
+			}
+		}
 	}
 	
 }
